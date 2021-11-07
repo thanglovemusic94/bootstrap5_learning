@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/functions";
+@import "./src/assets/scss/abstracts/bootstrap-variables";
+@import "./src/assets/scss/abstracts/variables";
+@import "./src/assets/scss/abstracts/mixins";
+@import "./src/assets/scss/abstracts/extents";
+
+.item {
+  background: $red;
+  height: 100px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  transition: all linear .2s;
+}

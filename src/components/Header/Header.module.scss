@@ -1,0 +1,10 @@
+@import "~bootstrap/scss/functions";
+@import "./src/assets/scss/abstracts/bootstrap-variables";
+@import "./src/assets/scss/abstracts/variables";
+@import "./src/assets/scss/abstracts/mixins";
+@import "./src/assets/scss/abstracts/extents";
+
+.header {
+  background: $gray-400;
+  min-height: 100px;
+}

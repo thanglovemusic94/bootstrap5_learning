@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from "./components/Header";
+import Product from "./components/Product";
+import {Container} from "react-bootstrap";
+import './assets/scss/style.scss'
 function App() {
+    const products = ['buoi', 'cam', 'quyt'];
+
+    let listProduct =products.map(value => {
+        return (
+            <Product product={value}/>
+        )
+    })
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        {/*<Header/>*/}
+        {/*<Container>*/}
+        {/*    {listProduct}*/}
+        {/*</Container>*/}
+        <div className="container">
+
+
+            <button className={'btn btn-primary'}>sgsgsg</button>
+            <button className={'btn btn-outline-primary'}>sgsgsg</button>
+        </div>
+    </>
   );
 }
 
